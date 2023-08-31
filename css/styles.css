@@ -1,0 +1,119 @@
+#contenedor{
+    background: aquamarine;
+    width: 1000px;
+    height: 1000px;
+    text-align: center;
+    margin: 100px auto;
+    position: relative;
+    /* Capas */
+    z-index: 0;
+}
+
+#contenedor .cara{
+    /* Acomodarlo */
+   position: absolute;
+   top: 30%;
+   right: 340px;
+   transition: .30s;
+}
+
+#contenedor .ojod{
+    position: absolute;
+    top: 36%;
+    right: 405px;
+    z-index: 1;
+    transition: .5s;
+}
+
+#contenedor .ojoi{
+    position: absolute;
+    top: 36%;
+    right: 485px;
+    z-index: 1;
+    transition: .10s;
+}
+
+#contenedor .nariz{
+    position: absolute;
+    top: 42%;
+    right: 421px;
+    z-index: 2;
+    transition: .10s;
+}
+
+#contenedor .techo{
+    position: absolute;
+    top: 21%;
+    right: 370px;
+    transition: .10s;
+}
+
+#contenedor .bigote{
+    position: absolute;
+    top: 55% ; 
+    right: 395px;
+    z-index: 1;
+    transition: .4s;
+}
+
+
+#contenedor .orejad{
+    position: absolute;
+    top: 33%;
+    left: 320px;
+    z-index: -1;
+    transition: .4s;
+}
+
+#contenedor .orejai{
+    position: absolute;
+    top: 33%;
+    right: 300px;
+    z-index: -1;
+    transition: .4s;
+}
+
+#contenedor .pied{
+    position: absolute;
+    top: 64%;
+    right: 340px;
+    z-index: -1;
+    transition: .4s;
+}
+
+#contenedor .piei{
+    position: absolute;
+    top: 64%;
+    left: 370px;
+    z-index: -1;
+    transition: .10s;
+}
+
+#contenedor:hover .cara{
+  transform:rotateY(270deg) ;
+}
+    
+#contenedor:hover .techo{
+    transform: translateY(-80px);
+}
+
+#contenedor:hover .bigote{
+    transform:rotate(360deg);
+}
+
+#contenedor:hover .orejad{
+    transform: skew(-50deg);
+}
+
+#contenedor:hover .orejai{
+    transform: skew(50deg);
+}
+
+#contenedor:hover .pied{
+    transform: skewX(20deg);
+}
+
+#contenedor:hover .piei{
+    transform: translate(-100px);
+}
+
